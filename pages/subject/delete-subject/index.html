@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Subject</title>
+  </head>
+  <body>
+    <main class="">
+      <div class="container mx-auto px-4 md:px-6 bg-blue-100">
+        <div class="flex">
+          <aside class="w-full max-w-[280px] h-screen flex flex-col justify-between bg-blue-900" id="sidebar"></aside>
+          <section id="content" class="flex-1 p-4 flex flex-col gap-4">
+            <header>
+              <div class="heading flex justify-between w-[1160px] p-3 ml-4">
+                <div class="pl-6 flex items-center">
+                    <h1 class="text-4xl text-blue-900 font-bold">Subject</h1>
+                </div>
+                <div class="flex gap-4">
+                <div class="searchbar flex gap-6 bg-white rounded-4xl flex justify-center items-center pl-5">
+                    <p><i class="fa-solid fa-magnifying-glass"></i></p>
+                    <form>
+                        <input type="text" placeholder="Search" class="border-none">
+                    </form>
+                </div>
+                  <div id="add">
+                    <button class="relative inline-flex items-center justify-center px-6 py-3 text-white font-semibold rounded-2xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 before:absolute before:inset-0 before:rounded-2xl before:bg-white/10 before:blur-md before:opacity-0 hover:before:opacity-100">Add New Subject</button>
+                  </div>
+                </div>
+             </div>
+            </header>
+            <!-- <div id="content-top" class="h-[200px] bg-white border border-gray-200 rounded-2xl" itemid="content-top"></div> -->
+            <div id="content-main" class="bg-white border border-gray-200 rounded-2xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 justify-between p-18" itemid="content-main">
+              
+            </div>
+            <div id="content-bottom" class="h-[150px] bg-white border border-gray-200 rounded-2xl" itemid="content-bottom"></div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>

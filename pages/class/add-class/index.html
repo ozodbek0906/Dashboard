@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      .active-dropdown {
+        height: auto !important;
+        padding: 16px !important;
+      }
+    </style>
+    <title>Class</title>
+  </head>
+  <body>
+    <main>
+      <div class="container mx-auto bg-blue-100 px-4 md:px-6">
+        <div class="flex">
+          <aside class="w-full max-w-[280px] h-screen flex flex-col justify-between bg-blue-900" id="sidebar"></aside>
+          <section id="content" class="flex-1 p-4 flex flex-col gap-4">
+            <!-- <div id="content-top" class="h-[200px] bg-white border border-gray-200 rounded-2xl" itemid="content-top"></div> -->
+            <div id="content-main" class="h-[calc(100vh-480px)] bg-white border border-gray-200 rounded-2xl" itemid="content-main">
+              <div class="input w-[1160px]">
+                <div class="bg-indigo-700 p-2 pl-6 rounded-t-2xl">
+                  <h2 class="text-white font-semibold">Class Details</h2>
+                </div>
+                <form name="addClass" id="class-form" onsubmit="return false;">
+                  <div class="flex p-8 gap-4 bg-white rounded-b-2xl">
+                      <div class="w-1/2">
+                          <div class="grid justify-center">
+                              <label class="text-blue-900 font-semibold" for="name">Grade *</label>
+                              <select name="grade" id="grade" required placeholder="Please select grade" class="max-w-md px-5 py-3 rounded-2xl border border-transparent bg-gradient-to-r from-indigo-200 via-purple-200 to-pink-200 text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-4 focus:ring-pink-300 focus:bg-white transition-all duration-300 shadow-md hover:shadow-xl w-[480px]">
+                                <option value="I">I</option>
+                                <option value="II">II</option>
+                                <option value="III">III</option>
+                                <option value="IV">IV</option>
+                                <option value="V">V</option>
+                                <option value="VI">VI</option>
+                                <option value="VII">VII</option>
+                                <option value="VIII">VIII</option>
+                                <option value="IX">IX</option>
+                                <option value="X">X</option>
+                                <option value="XI">XI</option>
+                              </select>
+                          </div>
+                          <div class="grid justify-center pt-4">
+                            <label class="text-blue-900 font-semibold" for="students">Students *</label>
+                            <div class="relative space-y-2" id="dropdown">
+                              <button type="button" id="dropdown-btn" class="max-w-md px-5 py-3 rounded-2xl border border-transparent bg-gradient-to-r from-indigo-200 via-purple-200 to-pink-200 text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-4 focus:ring-pink-300 focus:bg-white transition-all duration-300 shadow-md hover:shadow-xl w-[480px]">Select Students</button>
+                              <div name="students" id="dropdown-content" multiple required placeholder="Please select Students" class="absolute top-14 left-0 w-full h-0 transition-all duration-200 bg-white p-0 flex flex-col gap-2 rounded-b-2xl shadow-md overflow-hidden"></div>
+                              <div id="selected-students" class="flex flex-wrap gap-2"></div>
+                            </div>
+                          </div>
+                           <div class="grid justify-center pt-4">
+                          <label class="text-blue-900 font-semibold" for="icon">Icon *</label>
+                          <input id="icon" name="icon" type="text" placeholder="Please enter Icon" required class="max-w-md px-5 py-3 rounded-2xl border border-transparent bg-gradient-to-r from-indigo-200 via-purple-200 to-pink-200 text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-4 focus:ring-pink-300 focus:bg-white transition-all duration-300 shadow-md hover:shadow-xl w-[480px]">
+                      </div>
+                        </div>
+                        <div class="w-1/2">
+                          <div class="grid justify-center">
+                            <label class="text-blue-900 font-semibold" for="specialization">Specialization *</label>
+                            <input id="specialization" name="specialization" type="text" required placeholder="Enter Specialization" class="max-w-md px-5 py-3 rounded-2xl border border-transparent bg-gradient-to-r from-indigo-200 via-purple-200 to-pink-200 text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-4 focus:ring-pink-300 focus:bg-white transition-all duration-300 shadow-md hover:shadow-xl w-[480px]">
+                        </div>
+                        <div class="grid justify-center pt-4">
+                          <label class="text-blue-900 font-semibold" for="room">Room *</label>
+                          <input id="room" name="room" type="text" placeholder="Please enter room number" required class="max-w-md px-5 py-3 rounded-2xl border border-transparent bg-gradient-to-r from-indigo-200 via-purple-200 to-pink-200 text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-4 focus:ring-pink-300 focus:bg-white transition-all duration-300 shadow-md hover:shadow-xl w-[480px]">
+                      </div>
+                      </div>
+                  </div>
+                  
+                  <div class="btns flex justify-center gap-5 pr-7">
+                    <button type="submit" id="submit-btn" class="bg-indigo-700 p-3 pl-15 pr-15 text-xl rounded-4xl px-6 py-3 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white font-semibold rounded-2xl shadow-lg hover:shadow-xl hover:scale-105 transition duration-300 ease-in-out focus:outline-none focus:ring-4 focus:ring-pink-300">Submit</button>
+                  </div>
+
+                </div>
+          </form>
+
+            </div>
+            <div id="content-bottom" class="h-[150px] bg-white border border-gray-200 rounded-2xl" itemid="content-bottom"></div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>

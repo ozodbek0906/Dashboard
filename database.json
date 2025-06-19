@@ -1,0 +1,158 @@
+{
+  "users": [
+    {
+      "id": "c735",
+      "username": "ozodbek06",
+      "email": "ozod@gmail.com",
+      "password": "×]¶",
+      "image": "https://images.pexels.com/photos/1704488/pexels-photo-1704488.jpeg?cs=srgb&dl=pexels-sulimansallehi-1704488.jpg&fm=jpg",
+      "role": "admin",
+      "firstName": "",
+      "lastName": "",
+      "age": 0,
+      "gender": "",
+      "socialMedia": {
+        "facebook": "ozod0606",
+        "twitter": "ozodbek08",
+        "instagram": "ozod05",
+        "google": "ozodbek06"
+      },
+      "information": null,
+      "aboutme": "Salom, Mening Ismim Ozodbek",
+      "classes": [],
+      "subjects": [],
+      "createdAt": "2025-05-14T14:31:20.805Z",
+      "updatedAt": "2025-05-14T14:31:20.805Z"
+    },
+    {
+      "id": "65bf",
+      "username": "ozodbek_06",
+      "email": "ozod06@gmail.com",
+      "password": "×]¶",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/BMW.svg/960px-BMW.svg.png",
+      "role": "admin",
+      "firstName": "",
+      "lastName": "",
+      "age": 0,
+      "gender": "",
+      "socialMedia": {
+        "facebook": "ozod.bee_o6",
+        "twitter": "ozodbek08",
+        "instagram": "Add instagram",
+        "google": "Add google+"
+      },
+      "information": null,
+      "aboutme": "",
+      "classes": [],
+      "subjects": [],
+      "createdAt": "2025-05-18T14:19:48.004Z",
+      "updatedAt": "2025-05-18T14:19:48.004Z"
+    },
+    {
+      "id": "edb7",
+      "username": "Alex",
+      "email": "alex@gmail.com",
+      "password": "×]¶",
+      "image": "",
+      "role": "admin",
+      "firstName": "",
+      "lastName": "",
+      "age": 0,
+      "gender": "",
+      "socialMedia": {
+        "facebook": "Add Facebook",
+        "twitter": "Add twitter",
+        "instagram": "Add instagram",
+        "google": "Add google+"
+      },
+      "information": null,
+      "aboutme": "",
+      "classes": [],
+      "subjects": [],
+      "createdAt": "2025-05-19T10:07:20.556Z",
+      "updatedAt": "2025-05-19T10:07:20.556Z"
+    }
+  ],
+  "students": [
+    {
+      "id": "30568309",
+      "firstName": "Thomas",
+      "lastName": "Shelby",
+      "age": "28",
+      "passportSeries": "AD4925556",
+      "email": "ozodbekshakarboyev@gmail.com",
+      "address": "Samarqand",
+      "phoneNumber": "123456789",
+      "father": "William",
+      "mother": "Anna",
+      "expireDate": "",
+      "role": "student"
+    }
+  ],
+  "teachers": [
+    {
+      "id": "49133256",
+      "firstName": "Albert",
+      "lastName": "Enshtein",
+      "age": "98",
+      "passportSeries": "AD4925556",
+      "email": "albert@gmail.com",
+      "address": "new york",
+      "phoneNumber": "123456789",
+      "subject": "physics",
+      "expireDate": "",
+      "subjects": [],
+      "role": "teacher"
+    }
+  ],
+  "subjects": [
+    {
+      "id": "fc2a",
+      "subjectName": "Matematika",
+      "teacherName": "Jhon william",
+      "duration": "1 hour",
+      "imageUrl": "https://cdn.coursetop.uz/20230225_150911%20(2).jpg-1677323002119"
+    },
+    {
+      "id": "118d",
+      "subjectName": "geografiya",
+      "teacherName": "Thomas Stone",
+      "duration": "1 hour",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWz4DoZ-Ejvt--eEFQltKhNSSMaCHe2vZPgg&s"
+    }
+  ],
+  "classes": [
+    {
+      "id": "f743",
+      "grade": "IV",
+      "room": "112",
+      "icon": "<i class=\"fa-solid fa-calculator\"></i>",
+      "specialization": "mathematic",
+      "students": [
+        "64669075",
+        "30568309"
+      ]
+    },
+    {
+      "id": "fc69",
+      "grade": "IV",
+      "room": "112",
+      "icon": "<i class=\"fa-solid fa-calculator\"></i>",
+      "specialization": "mathematic",
+      "students": [
+        "64669075",
+        "30568309"
+      ]
+    },
+    {
+      "grade": "X",
+      "room": "110",
+      "icon": "<i class=\"fa-solid fa-calculator\"></i>",
+      "specialization": "english",
+      "students": [
+        "64669075"
+      ],
+      "id": "cee7"
+    }
+  ]
+}

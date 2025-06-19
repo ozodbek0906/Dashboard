@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Edit Student</title>
+  </head>
+  <body>
+    <main class="">
+      <div class="container mx-auto bg-blue-100 px-4 md:px-6">
+        <div class="flex">
+          <aside class="w-full max-w-[280px] h-screen flex flex-col justify-between bg-blue-900" id="sidebar"></aside>
+          <section id="content" class="flex-1 p-4 flex flex-col gap-4">
+            <!-- <div id="content-top" class="h-[200px] bg-white border border-gray-200 rounded-2xl" itemid="content-top"></div> -->
+            <div id="content-main" class="h-[calc(100vh-480px)] bg-white border border-gray-200 rounded-2xl" itemid="content-main">
+              <div class="input w-[1160px]">
+                <div class="bg-indigo-700 p-2 pl-6 rounded-t-2xl">
+                  <h2 class="text-white font-semibold">Edit Student Details</h2>
+                </div>
+                <form name="addStudent">
+                  <div class="flex p-8 gap-4 bg-white rounded-b-2xl">
+                      <div class="w-1/2">
+                          <div class="grid justify-center">
+                              <label class="text-blue-900 font-semibold" for="name">First Name *</label>
+                              <input id="name" name="firstName" type="text" placeholder="Firstname" required class="max-w-md px-5 py-3 rounded-2xl border border-transparent bg-gradient-to-r from-indigo-200 via-purple-200 to-pink-200 text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-4 focus:ring-pink-300 focus:bg-white transition-all duration-300 shadow-md hover:shadow-xl w-[480px]">
+                          </div>
+                          <div class="pl-2">
+                              <h1 class="pl-9 text-blue-900">Age & Passport Serie *</h1>
+                              <div class="flex gap-2 justify-center">
+                                  <input type="text" name="age" placeholder="Please enter age" required class="w-[217px] max-w-md px-5 py-3 rounded-2xl border border-transparent bg-gradient-to-r from-indigo-200 via-purple-200 to-pink-200 text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-4 focus:ring-pink-300 focus:bg-white transition-all duration-300 shadow-md hover:shadow-xl mr-2">
+                                  <input type="text" name="series" placeholder="Passport Serie" required class="w-[217px] max-w-md px-5 py-3 rounded-2xl border border-transparent bg-gradient-to-r from-indigo-200 via-purple-200 to-pink-200 text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-4 focus:ring-pink-300 focus:bg-white transition-all duration-300 shadow-md hover:shadow-xl mr-2">
+                              </div>
+                          </div>
+                          <div class="grid justify-center">
+                              <label class="text-blue-900 font-semibold" for="name">Email *</label>
+                              <input id="email" name="email" type="email" required placeholder="Please enter email address" class="max-w-md px-5 py-3 rounded-2xl border border-transparent bg-gradient-to-r from-indigo-200 via-purple-200 to-pink-200 text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-4 focus:ring-pink-300 focus:bg-white transition-all duration-300 shadow-md hover:shadow-xl w-[480px]">
+                          </div>
+                          <div class="grid justify-center pt-4">
+                            <label class="text-blue-900 font-semibold" for="name">Father Name *</label>
+                            <input id="name" name="fatherName" type="text" placeholder="Father name" required class="max-w-md px-5 py-3 rounded-2xl border border-transparent bg-gradient-to-r from-indigo-200 via-purple-200 to-pink-200 text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-4 focus:ring-pink-300 focus:bg-white transition-all duration-300 shadow-md hover:shadow-xl w-[480px]">
+                          </div>
+                        </div>
+                        <div class="w-1/2">
+                          <div class="grid justify-center">
+                              <label class="text-blue-900 font-semibold" for="name">Last Name *</label>
+                              <input id="name" name="lastName" type="text" required placeholder="Last Name" class="max-w-md px-5 py-3 rounded-2xl border border-transparent bg-gradient-to-r from-indigo-200 via-purple-200 to-pink-200 text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-4 focus:ring-pink-300 focus:bg-white transition-all duration-300 shadow-md hover:shadow-xl w-[480px]">
+                          </div>
+                          <div class="grid justify-center">
+                              <label class="text-blue-900 font-semibold" for="name">Phone *</label>
+                              <input id="phone" name="phoneNumber" type="text" required placeholder="Phone Number" class="max-w-md px-5 py-3 rounded-2xl border border-transparent bg-gradient-to-r from-indigo-200 via-purple-200 to-pink-200 text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-4 focus:ring-pink-300 focus:bg-white transition-all duration-300 shadow-md hover:shadow-xl w-[480px]">
+                          </div>
+                          <div class="grid justify-center">
+                            <label class="text-blue-900 font-semibold" for="name">Address *</label>
+                            <input id="address" name="address" type="text" required placeholder="Please enter address" class="max-w-md px-5 py-3 rounded-2xl border border-transparent bg-gradient-to-r from-indigo-200 via-purple-200 to-pink-200 text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-4 focus:ring-pink-300 focus:bg-white transition-all duration-300 shadow-md hover:shadow-xl w-[480px]">
+                            <small class="text-gray-500">0/200</small>
+                        </div>
+                        <div class="grid justify-center">
+                          <label class="text-blue-900 font-semibold" for="name">Mother Name *</label>
+                          <input id="name" name="motherName" type="text" placeholder="Mother name" required class="max-w-md px-5 py-3 rounded-2xl border border-transparent bg-gradient-to-r from-indigo-200 via-purple-200 to-pink-200 text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-4 focus:ring-pink-300 focus:bg-white transition-all duration-300 shadow-md hover:shadow-xl w-[480px]">
+                      </div>
+                      </div>
+                  </div>
+                  
+                  <div class="btns flex justify-center gap-5 pr-7">
+                    <button class="bg-indigo-700 p-3 pl-15 pr-15 text-xl rounded-4xl px-6 py-3 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white font-semibold rounded-2xl shadow-lg hover:shadow-xl hover:scale-105 transition duration-300 ease-in-out focus:outline-none focus:ring-4 focus:ring-pink-300">Submit</button>
+                  </div>
+
+                </div>
+          </form>
+
+            </div>
+            <div id="content-bottom" class="h-[150px] bg-white border border-gray-200 rounded-2xl" itemid="content-bottom"></div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>

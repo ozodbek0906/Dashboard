@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Login</title>
+  </head>
+  <body>
+    <main class="bg-blue-100 bg-cover bg-center" style="background-image: url(https://www.sss-solutions.org/wp-content/uploads/2018/01/1116146294-login-page-background-image-112.jpg)">
+      <div class="container mx-auto bg-cover bg-center" style="background-image: url()">
+        <div class="h-screen flex items-center justify-center">
+          <div class="w-[500px] h-[425px] mx-auto mt-16 p-12 bg-white rounded-3xl shadow-2xl border border-gray-200 space-y-8 bg-cover bg-center" style="background-image: url(https://static.vecteezy.com/system/resources/previews/011/635/825/non_2x/abstract-square-interface-modern-background-concept-fingerprint-digital-scanning-visual-security-system-authentication-login-vector.jpg)">
+            <h1 class="text-4xl text-orange-500 pl-[150px] font-bold">Login</h1>
+            <form name="login" class="flex flex-col gap-4">
+              <input type="email" name="email" placeholder="Email" class="w-full p-3 rounded-2xl bg-white border border-gray-300 shadow-md focus:outline-none focus:ring-4 focus:ring-blue-400 focus:border-blue-400 transition duration-300 text-gray-700 font-medium placeholder-gray-400" />
+              <input type="password" name="password" placeholder="Password" class="w-full p-3 rounded-2xl bg-white border border-gray-300 shadow-md focus:outline-none focus:ring-4 focus:ring-blue-400 focus:border-blue-400 transition duration-300 text-gray-700 font-medium placeholder-gray-400" />
+              <button type="submit" class="w-full bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 hover:from-pink-500 hover:to-yellow-500 text-white font-bold py-3 px-6 rounded-full shadow-lg transition-all duration-500">Login</button>
+            </form>
+            <div class="flex justify-center gap-2">
+              <h3 class="text-gray-400 text-lg">Are you don't have an account?</h3>
+              <a class="text-blue-500 text-lg" href="../register/index.html">Sign In</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
